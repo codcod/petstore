@@ -6,6 +6,8 @@ All notable changes to this project are documented here. Format follows
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-09-12
+
 ### Added
 
 - `petstore-api`: JSON API (list/get/create/update/delete pets) over Starlette + SQLAlchemy/asyncpg.
@@ -19,4 +21,5 @@ All notable changes to this project are documented here. Format follows
 - Docker Compose stack (`db` + `migrate` + `petstore`) and a single production `Dockerfile`.
 - Settings externalized to `.env` (`POSTGRES_*`, `APP_PORT`).
 
-[Unreleased]: https://github.com/OWNER/REPO/compare/HEAD...HEAD
+[Unreleased]: https://github.com/codcod/petstore/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/codcod/petstore/releases/tag/v0.1.0
