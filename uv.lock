@@ -194,7 +194,7 @@ wheels = [
 
 [[package]]
 name = "petstore-api"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "packages/petstore-api" }
 dependencies = [
     { name = "asyncpg" },
@@ -207,17 +207,17 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "asyncpg", specifier = ">=0.29" },
-    { name = "msgspec", specifier = ">=0.18" },
-    { name = "python-multipart", specifier = ">=0.0.9" },
-    { name = "sqlalchemy", specifier = ">=2.0" },
-    { name = "starlette", specifier = ">=0.40" },
-    { name = "uvicorn", specifier = ">=0.30" },
+    { name = "asyncpg", specifier = ">=0.31.0" },
+    { name = "msgspec", specifier = ">=0.21.1" },
+    { name = "python-multipart", specifier = ">=0.0.32" },
+    { name = "sqlalchemy", specifier = ">=2.0.52" },
+    { name = "starlette", specifier = ">=1.6.0" },
+    { name = "uvicorn", specifier = ">=0.52.4" },
 ]
 
 [[package]]
 name = "petstore-cli"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "packages/petstore-cli" }
 dependencies = [
     { name = "httpx2" },
@@ -228,7 +228,7 @@ requires-dist = [{ name = "httpx2", specifier = ">=2.12.0" }]
 
 [[package]]
 name = "petstore-web"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "packages/petstore-web" }
 dependencies = [
     { name = "httpx2" },
@@ -244,9 +244,9 @@ requires-dist = [
     { name = "httpx2", specifier = ">=2.12.0" },
     { name = "petstore-api", editable = "packages/petstore-api" },
     { name = "petstore-cli", editable = "packages/petstore-cli" },
-    { name = "python-multipart", specifier = ">=0.0.9" },
-    { name = "starlette", specifier = ">=0.40" },
-    { name = "uvicorn", specifier = ">=0.30" },
+    { name = "python-multipart", specifier = ">=0.0.32" },
+    { name = "starlette", specifier = ">=1.6.0" },
+    { name = "uvicorn", specifier = ">=0.52.4" },
 ]
 
 [[package]]
@@ -317,7 +317,7 @@ wheels = [
 
 [[package]]
 name = "templ"
-version = "0.1.0"
+version = "0.1.1"
 source = { virtual = "." }
 
 [package.dev-dependencies]
