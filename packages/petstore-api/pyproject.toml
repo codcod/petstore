@@ -7,7 +7,7 @@ dependencies = [
     "uvicorn>=0.30",
     "sqlalchemy>=2.0.52",
     "asyncpg>=0.29",
-    "msgspec>=0.18",
+    "msgspec>=0.21.1",
     "python-multipart>=0.0.32",
 ]
 
