@@ -1,0 +1,29 @@
+<div class="app-shell">
+  <nav class="sidebar">
+    <div class="brand">🐾 Petstore</div>
+    <a class="add-pet-btn" href="/pets/new">+ Add Pet</a>
+    <div class="nav-list">$nav</div>
+  </nav>
+  <div class="main-panes">
+    <section class="pane pane-list">
+      <div class="pane-header">
+        <h1>Pets</h1>
+        <input
+          class="search"
+          type="search"
+          name="search"
+          placeholder="Search pets"
+          hx-get="/pets"
+          hx-target="#pet-list"
+          hx-swap="outerHTML"
+          hx-trigger="keyup changed delay:300ms"
+          hx-include="this"
+        >
+      </div>
+      $pet_list
+    </section>
+    <section class="pane pane-detail">
+      $pet_detail
+    </section>
+  </div>
+</div>

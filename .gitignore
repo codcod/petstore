@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# uv / build artifacts
+.venv/
+dist/
+build/
+
+# tool caches
+.ruff_cache/
+.mypy_cache/
+.ty_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# .env holds only local-dev defaults (no secrets) and is intentionally
+# committed so `docker compose`/`just` work out of the box. Ignore only
+# per-developer overrides.
+.env.local
+.env.*.local
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# AI
+.claude

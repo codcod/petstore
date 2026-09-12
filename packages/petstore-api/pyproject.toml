@@ -1,0 +1,19 @@
+[project]
+name = "petstore-api"
+version = "0.1.0"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "starlette>=0.40",
+    "uvicorn>=0.30",
+    "sqlalchemy>=2.0",
+    "asyncpg>=0.29",
+    "msgspec>=0.18",
+    "python-multipart>=0.0.9",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/petstore_api"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

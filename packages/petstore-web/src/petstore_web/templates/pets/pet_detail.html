@@ -1,0 +1,15 @@
+<div id="pet-detail" class="detail">
+  <div class="detail-header">
+    <h2>$name</h2>
+    <span class="status status-$status">$status</span>
+  </div>
+  <dl class="detail-fields">
+    <div><dt>Category</dt><dd>$category</dd></div>
+    <div><dt>Tags</dt><dd>$tags</dd></div>
+    <div><dt>Added</dt><dd>$created_at</dd></div>
+  </dl>
+  <div class="detail-actions">
+    <button hx-get="/pets/$id/detail/edit" hx-target="#pet-detail" hx-swap="outerHTML">Edit</button>
+    <button class="delete" hx-delete="/pets/$id" hx-target="#pet-detail" hx-swap="outerHTML">Delete</button>
+  </div>
+</div>

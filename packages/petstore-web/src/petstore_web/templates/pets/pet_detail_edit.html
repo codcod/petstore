@@ -1,0 +1,11 @@
+<div id="pet-detail" class="detail">
+  <form class="pet-form pet-edit-form" hx-put="/pets/$id/detail/edit" hx-target="#pet-detail" hx-swap="outerHTML">
+    <input name="name" value="$name" placeholder="Name" required>
+    <input name="category" value="$category" placeholder="Category">
+    <input name="tags" value="$tags" placeholder="Tags (comma separated)">
+    <input name="photo_urls" value="$photo_urls" placeholder="Photo URLs (comma separated)">
+    <select name="status">$status_options</select>
+    <button type="submit">Save</button>
+    <button type="button" class="cancel" hx-get="/pets/$id/detail" hx-target="#pet-detail" hx-swap="outerHTML">Cancel</button>
+  </form>
+</div>

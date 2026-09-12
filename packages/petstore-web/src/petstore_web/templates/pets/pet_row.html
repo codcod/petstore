@@ -1,0 +1,6 @@
+<li class="pet-row $row_class" hx-get="/pets/$id/detail" hx-target="#pet-detail" hx-swap="outerHTML" onclick="document.querySelectorAll('#pet-list li').forEach(function(el){el.classList.remove('selected')});this.classList.add('selected')">
+  <span class="name">$name</span>
+  <span class="category">$category</span>
+  <span class="status status-$status">$status</span>
+  <span class="tags">$tags</span>
+</li>

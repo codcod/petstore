@@ -1,0 +1,16 @@
+<div class="form-page">
+  <a class="back-link" href="/">&larr; Back to pets</a>
+  <h1>Add Pet</h1>
+  <form class="pet-form" method="post" action="/pets/new">
+    <input name="name" placeholder="Name" required>
+    <input name="category" placeholder="Category">
+    <input name="tags" placeholder="Tags (comma separated)">
+    <input name="photo_urls" placeholder="Photo URLs (comma separated)">
+    <select name="status">
+      <option value="available">available</option>
+      <option value="pending">pending</option>
+      <option value="sold">sold</option>
+    </select>
+    <button type="submit">Save Pet</button>
+  </form>
+</div>
